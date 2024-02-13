@@ -6,6 +6,7 @@ import AdminAbout from './AdminAbout';
 import { useSelector } from 'react-redux';
 import AdminSidebar from './AdminSidebar';
 import AdminContact from './AdminContact';
+import AdminExperience from './AdminExperience';
 
 
 const { TabPane }= Tabs;
@@ -13,7 +14,7 @@ function Admin() {
   const {portfolioData} = useSelector((state)=>state.root);
 
   return (
-    <div>
+    <div className="">
         <Header />
         {portfolioData && 
       <div className="mt-5 p-5">
@@ -29,6 +30,9 @@ function Admin() {
             </TabPane>
             <TabPane tab="Contact" key="4">
                 <AdminContact />
+            </TabPane>
+            <TabPane tab="Experience" key="5">
+                <AdminExperience />
             </TabPane>
         </Tabs>
       </div> }

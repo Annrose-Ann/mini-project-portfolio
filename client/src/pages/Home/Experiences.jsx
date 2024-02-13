@@ -31,7 +31,7 @@ function Experiences() {
         <div className="flex flex-col gap-5">
             <h1 className="text-secondary text-xl ">{experiences[selectedItemIndex].title}</h1>
             <h1 className="text-[#ade2c1] text-xl ">{experiences[selectedItemIndex].company}</h1>
-            <p className="text-white">aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+            <p className="text-white"></p>
         </div>
 
       </div>
