@@ -105,4 +105,23 @@ catch(error) {
 }
 });
 
+//add experience
+
+router.post("/add-experience",async(req,res)=>{
+    try{
+        const experience= new Experience(req.body);
+        await experience.save();
+        res.status(200).send({
+            data:experience,
+            success:true,
+            message:"Experience added successfully",
+        });
+    }
+    catch(error) {
+        res.status(500).send(error);
+    }
+});
+
+
+
 module.exports=router;
